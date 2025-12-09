@@ -1,0 +1,118 @@
+/* --- Global Styles: Clean Professional Theme --- */
+body {
+    font-family: Verdana, Geneva, sans-serif; /* Clean, wide font */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light Grey Background */
+    color: #333;
+}
+
+/* --- Navigation Bar --- */
+header {
+    background-color: #003366; /* Deep Professional Blue */
+    color: white;
+    padding: 20px;
+    overflow: hidden; /* Requirement: Clears floats */
+    border-bottom: 4px solid #6699cc; /* Lighter blue accent line */
+}
+
+/* Requirement: Student Name / Logo */
+.logo {
+    float: left; /* Requirement: Float */
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Requirement: Navigation menu */
+nav {
+    float: right; /* Requirement: Float */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    text-transform: uppercase; /* Makes links CAPITALIZED */
+}
+
+nav a:hover {
+    color: #6699cc; /* Light blue on hover */
+    text-decoration: underline;
+}
+
+/* --- Main Container --- */
+.container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff; /* White paper look */
+    border: 1px solid #ddd;
+    box-shadow: 5px 5px 0px #ccc; /* Simple "blocky" shadow */
+}
+
+h1 {
+    color: #003366;
+    border-left: 10px solid #6699cc; /* Side border instead of bottom */
+    padding-left: 15px;
+}
+
+/* --- About Page Styles --- */
+.profile-img {
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin-right: 25px;
+    border: 1px solid #ddd;
+    padding: 5px; /* Creates a frame effect */
+    background-color: #fff;
+}
+
+/* --- Skills Page Styles (Flexbox) --- */
+.skills-container {
+    display: flex; /* Requirement: Flexbox */
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* Requirement: Card styling */
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 30%;
+    text-align: left; /* Left aligned text for a document feel */
+    border-top: 5px solid #003366; /* Blue bar on top of card */
+}
+
+.card h3 {
+    color: #003366;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* --- Contact Form Styles --- */
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #999;
+    background-color: #fafafa;
+    border-radius: 0; /* Square corners */
+}
+
+/* Requirement: Submit Button */
+input[type=submit] {
+    width: auto; /* Button only as wide as the text */
+    background-color: #003366;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: #6699cc;
+}
